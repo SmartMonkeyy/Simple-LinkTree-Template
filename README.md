@@ -1,1 +1,1 @@
-# Simple-LinkTree-Template
+# Simple LinkTree Template
