@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Outer Sans';
+  src: url('../webfonts/MADE Outer Sans Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Brookeshappell8';
+  src: url('../webfonts/Brookeshappell8-eoKB.ttf') format("truetype");
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  background-color: rgb(75, 75, 75);
+  color: aliceblue;
+  display:flex; 
+  flex-direction:column;
+}
+
+h3, h5{
+  font-family: 'Outer Sans';
+}
+
+h3{
+  letter-spacing: 0.07em;
+}
+
+h5{
+  letter-spacing: 0.3em;
+}
+
+
+.head-div {
+  text-align:center;
+  padding-top:2%;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 125px;
+}
+  
+.link-div{ 
+  padding:20%;
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+.alink:link,
+.alink:visited{
+  font-family: 'Brookeshappell8';
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 40px 150px;
+  padding: 15px 40px;
+  border-radius: 100px;  
+  transition: all 0.2s;
+  text-decoration:none;
+}
+  
+.alink:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.alink:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alink-white{
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+.alink-white::after {
+  background-color: #fff;
+}
+
+.alink:hover::after {
+  transform: scaleX(2.4) scaleY(2.6);
+  opacity: 0;
+}
+  
+.alink-animated{
+  animation: moveInBottom 1.5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+footer {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.1em;
+}
